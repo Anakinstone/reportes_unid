@@ -123,33 +123,6 @@ reportes_unid/fast:
 	$(MAKE) -f CMakeFiles/reportes_unid.dir/build.make CMakeFiles/reportes_unid.dir/build
 .PHONY : reportes_unid/fast
 
-funciones.o: funciones.cpp.o
-
-.PHONY : funciones.o
-
-# target to build an object file
-funciones.cpp.o:
-	$(MAKE) -f CMakeFiles/reportes_unid.dir/build.make CMakeFiles/reportes_unid.dir/funciones.cpp.o
-.PHONY : funciones.cpp.o
-
-funciones.i: funciones.cpp.i
-
-.PHONY : funciones.i
-
-# target to preprocess a source file
-funciones.cpp.i:
-	$(MAKE) -f CMakeFiles/reportes_unid.dir/build.make CMakeFiles/reportes_unid.dir/funciones.cpp.i
-.PHONY : funciones.cpp.i
-
-funciones.s: funciones.cpp.s
-
-.PHONY : funciones.s
-
-# target to generate assembly for a file
-funciones.cpp.s:
-	$(MAKE) -f CMakeFiles/reportes_unid.dir/build.make CMakeFiles/reportes_unid.dir/funciones.cpp.s
-.PHONY : funciones.cpp.s
-
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -186,9 +159,6 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... reportes_unid"
-	@echo "... funciones.o"
-	@echo "... funciones.i"
-	@echo "... funciones.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

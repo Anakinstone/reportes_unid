@@ -80,9 +80,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/andresaguilar/CLionProjects/reportes-unid/funciones.cpp">
-			<Option target="reportes_unid"/>
-		</Unit>
 		<Unit filename="/Users/andresaguilar/CLionProjects/reportes-unid/main.cpp">
 			<Option target="reportes_unid"/>
 		</Unit>

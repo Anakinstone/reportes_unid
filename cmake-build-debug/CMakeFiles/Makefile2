@@ -74,12 +74,12 @@ preinstall:
 CMakeFiles/reportes_unid.dir/all:
 	$(MAKE) -f CMakeFiles/reportes_unid.dir/build.make CMakeFiles/reportes_unid.dir/depend
 	$(MAKE) -f CMakeFiles/reportes_unid.dir/build.make CMakeFiles/reportes_unid.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/andresaguilar/CLionProjects/reportes-unid/cmake-build-debug/CMakeFiles --progress-num=1,2,3 "Built target reportes_unid"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/andresaguilar/CLionProjects/reportes-unid/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target reportes_unid"
 .PHONY : CMakeFiles/reportes_unid.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/reportes_unid.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/andresaguilar/CLionProjects/reportes-unid/cmake-build-debug/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/andresaguilar/CLionProjects/reportes-unid/cmake-build-debug/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/reportes_unid.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/andresaguilar/CLionProjects/reportes-unid/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/reportes_unid.dir/rule

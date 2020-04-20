@@ -1,7 +1,5 @@
 #include <iostream>
 #include <fstream>
-#include <sstream>
-#include <iomanip>
 #include <vector>
 
 using namespace std;
@@ -15,7 +13,6 @@ int main() {
     vector<string>nombre_alumno;
     vector<string>programa_unid;
     vector<double>saldo_vencido_pesos;
-    vector<int>col_vencidas;
     vector<bool>check;
 
 
@@ -33,7 +30,7 @@ int main() {
     if (read.is_open()){
         //ignore first line
         string line;
-        getline(read, line);
+        getline(read, line);//ignorar la primera linea
 
         while (!read.eof()){
             //Aquí definimos un get line por columna, la verdad ni se que significan todas las columnas, pero se tienen que declarar :v
@@ -116,8 +113,7 @@ int main() {
             for (int j = 0; j < i; j++) {
                 if (id_unid[j] == id_buscar)
                     cout << id_unid[j] << "\t" << nombre_alumno[j] << "\t" << programa_unid[j] << "\t"
-                         << saldo_vencido_pesos[j]
-                         << "\t" << check[j] << endl;
+                         << saldo_vencido_pesos[j]<< endl;
             }
         }
             break;
@@ -129,17 +125,17 @@ int main() {
             for (int j = 0; j < i; j++) {
                 if (programa_unid[j].compare(buscar_programa) == 0)
                     cout << id_unid[j] << "\t" << nombre_alumno[j] << "\t" << programa_unid[j] << "\t"
-                         << saldo_vencido_pesos[j]
-                         << "\t" << check[j] << endl;
+                         << saldo_vencido_pesos[j]<< endl;
+
             }
         }
             break;
         case 4: {
+            cout << "ID" << "\t" << "Nombre" << "\t" << "programa" << "\t" << "saldo vencido" << endl;
             for (int j = 0; j < i; j++) {
-                cout << "ID" << "\t" << "Nombre" << "\t" << "programa" << "\t" << "saldo vencido" << endl;
                 if (saldo_vencido_pesos[j] > 0)
                     cout << id_unid[j] << "\t" << nombre_alumno[j] << "\t" << programa_unid[j] << "\t"
-                         << saldo_vencido_pesos[j] << "\t" << check[j] << endl;
+                         << saldo_vencido_pesos[j]<< endl;
             }
 
         }
@@ -147,6 +143,16 @@ int main() {
         {
             return 0;
         }
-    }
 
+    }
+    ofstream archivo;
+    archivo.open("Mensaje Alumno.txt", ios::out);
+    if (archivo.fail()) {
+        cout << "No se puede abrir el archivo de texto";
+        exit(1);
+    }
+    cout<<"Ingrese El nombre del alumno que necesita generar un mensaje: ";
+    string n_mensaje;
+    cin>>n_mensaje;
+    archivo<< n_mensaje << " Aqui va el mensaje que se genera automaticamen, como soy malo redactando solo dire esto, paga ya porfa"<<endl;
 }

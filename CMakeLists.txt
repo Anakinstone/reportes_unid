@@ -3,4 +3,4 @@ project(reportes_unid)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(reportes_unid main.cpp funciones.cpp)
+add_executable(reportes_unid main.cpp)

@@ -1,5 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/reportes_unid.dir/funciones.cpp.o"
   "CMakeFiles/reportes_unid.dir/main.cpp.o"
   "reportes_unid"
   "reportes_unid.pdb"
