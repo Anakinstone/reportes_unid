@@ -1,0 +1,3 @@
+/Users/andresaguilar/CLionProjects/reportes-unid/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/andresaguilar/CLionProjects/reportes-unid/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/andresaguilar/CLionProjects/reportes-unid/cmake-build-debug/CMakeFiles/reportes_unid.dir
